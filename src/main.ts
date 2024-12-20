@@ -10,12 +10,12 @@ let mediaStream: MediaStream;
 
 async function init() {
   const cameraKit = await bootstrapCameraKit({
-    apiToken: 'eyJhbGciOiJIUzI1NiIsImtpZCI6IkNhbnZhc1MyU0hNQUNQcm9kIiwidHlwIjoiSldUIn0.eyJhdWQiOiJjYW52YXMtY2FudmFzYXBpIiwiaXNzIjoiY2FudmFzLXMyc3Rva2VuIiwibmJmIjoxNzM0NjkyNDA3LCJzdWIiOiIzMmZhMmZlNC0wYmYxLTQ2N2QtODM4Mi04MTVmNzliMjFkMWJ-U1RBR0lOR345NDBiYjljMi04NTZiLTQxZWItYTkyZi02MmY1YTExMmM4OTEifQ.nAeEY1L9hODsxKnFMti-dLr5c_3GRtB2JxI2e41MG5U',  // Use your actual API token
+    apiToken: 'eyJhbGciOiJIUzI1NiIsImtpZCI6IkNhbnZhc1MyU0hNQUNQcm9kIiwidHlwIjoiSldUIn0.eyJhdWQiOiJjYW52YXMtY2FudmFzYXBpIiwiaXNzIjoiY2FudmFzLXMyc3Rva2VuIiwibmJmIjoxNzI2NTY1MzEwLCJzdWIiOiIyN2NmNDQwYy04YjBkLTQ5ZDEtYTM2MC04YjdkODQ5OTM3ZWJ-U1RBR0lOR340Y2ZhYTJiOC1kYWY4LTRhZDYtODYwNy1iMmI5NWYzMDVmMzAifQ.q8qMDDOzMv4jFiZ8NRqQ8-qDJMV4l5YmOex67WC6DqI',  // Use your actual API token
   });
 
   const session = await cameraKit.createSession({ liveRenderTarget });
   const { lenses } = await cameraKit.lensRepository.loadLensGroups([
-    'c663cd9c-c585-4e38-9ada-8204632fbdf8',
+    '276ddfa1-5fbe-4099-aaaf-ceb9c81bb17f',
   ]);
 
   session.applyLens(lenses[0]);
